@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to AirPort Express",
+        "description": "Enter the IP address or hostname of your AirPort Express.",
+        "data": {
+          "host": "Host",
+          "password": "Password"
+        },
+        "data_description": {
+          "host": "IP address or hostname (e.g. 10.0.1.30)",
+          "password": "Admin password (leave blank if none)"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Discovered: {name}",
+        "description": "An AirPort Express named **{name}** was discovered on your network.",
+        "data": {
+          "password": "Password"
+        },
+        "data_description": {
+          "password": "Admin password (leave blank if none)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to the AirPort Express. Check the host and password.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  }
+}
